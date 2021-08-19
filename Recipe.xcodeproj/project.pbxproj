@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C2D90BC26CE0AA900E1108A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2D90BB26CE0AA900E1108A /* MainTabView.swift */; };
+		6C2D90BE26CEEE5A00E1108A /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2D90BD26CEEE5A00E1108A /* RecipeFeaturedView.swift */; };
 		6C6B01F526CD4BA300C06638 /* RecipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6B01F426CD4BA300C06638 /* RecipeApp.swift */; };
 		6C6B01F726CD4BA300C06638 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6B01F626CD4BA300C06638 /* ContentView.swift */; };
 		6C6B01F926CD4BA400C06638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B01F826CD4BA400C06638 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		6C2D90BB26CE0AA900E1108A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		6C2D90BD26CEEE5A00E1108A /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
 		6C6B01F126CD4BA300C06638 /* Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C6B01F426CD4BA300C06638 /* RecipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeApp.swift; sourceTree = "<group>"; };
 		6C6B01F626CD4BA300C06638 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				6C6B01F626CD4BA300C06638 /* ContentView.swift */,
 				6C6B021526CD8C3D00C06638 /* RecipeDetailView.swift */,
 				6C2D90BB26CE0AA900E1108A /* MainTabView.swift */,
+				6C2D90BD26CEEE5A00E1108A /* RecipeFeaturedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				6C6B01F726CD4BA300C06638 /* ContentView.swift in Sources */,
 				6C2D90BC26CE0AA900E1108A /* MainTabView.swift in Sources */,
 				6C6B01F526CD4BA300C06638 /* RecipeApp.swift in Sources */,
+				6C2D90BE26CEEE5A00E1108A /* RecipeFeaturedView.swift in Sources */,
 				6C6B021426CD802F00C06638 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

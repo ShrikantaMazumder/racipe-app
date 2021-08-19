@@ -21,6 +21,7 @@ struct MainTabView: View {
                     Text("Recipes")
                 }
         }
+        .environmentObject(RecipeModel())
     }
 }
 
