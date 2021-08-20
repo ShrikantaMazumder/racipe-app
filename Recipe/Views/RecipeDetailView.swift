@@ -10,6 +10,7 @@ import SwiftUI
 struct RecipeDetailView: View {
     var recipe: Recipe
     @State var selectedSize = 2
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
