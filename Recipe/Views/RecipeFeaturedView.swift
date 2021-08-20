@@ -24,7 +24,7 @@ struct RecipeFeaturedView: View {
         VStack(alignment: .leading, spacing: 0) {
             Text("Featured Recipe")
                 .bold()
-                .font(.system(.largeTitle, design: .rounded))
+                .font(Font.custom("Avenir Heavy", size: 24))
                 .padding(.leading)
                 .padding(.top, 40)
             GeometryReader { geo in
@@ -46,6 +46,7 @@ struct RecipeFeaturedView: View {
                                             .aspectRatio(contentMode: .fill)
                                             .clipped()
                                         Text(model.recipes[index].name)
+                                            .font(Font.custom("Avenir", size: 15))
                                             .padding(5)
                                     }
                                 }
@@ -67,10 +68,11 @@ struct RecipeFeaturedView: View {
             
             VStack(alignment: .leading, spacing: 10) {
                 Text("Preparation Time")
-                    .font(.headline)
+                    .font(Font.custom("Avenir Heavy", size: 16))
                 Text(model.recipes[selectedTabIndex].prepTime)
+                    .font(Font.custom("Avenir", size: 15))
                 Text("Highlights")
-                    .font(.headline)
+                    .font(Font.custom("Avenir Heavy", size: 16))
                 
                 RecipeHighlights(highlghts: model.recipes[selectedTabIndex].highlights)
             }
