@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecipeDetailView: View {
     var recipe: Recipe
+    @State var selectedSize = 2
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -18,14 +19,29 @@ struct RecipeDetailView: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 250)
                 
-                // MARK: Ingredients
+                // MARK: Serving size picker
+                VStack(alignment: .leading) {
+                    Text("Select your serving size")
+                        .font(.caption)
+                    Picker("", selection: $selectedSize) {
+                        Text("2").tag(2)
+                        Text("4").tag(4)
+                        Text("6").tag(6)
+                        Text("8").tag(8)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                }
+                .frame(width: 160)
+                .padding()
                 
+                
+                // MARK: Ingredients
                 VStack(alignment: .leading) {
                     Text("Ingredients")
                         .font(.headline)
                         .padding(.vertical, 5)
                     ForEach(recipe.ingredients) { ingrad in
-                        Text(ingrad.name)
+                        Text("• " + RecipeModel.getPortion(ingradient: ingrad, recipeServing: recipe.servings, targetServings: selectedSize) + " " + ingrad.name.lowercased())
                     }
                 }
                 .padding(.horizontal)

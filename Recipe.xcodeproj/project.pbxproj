@@ -18,6 +18,7 @@
 		6C6B021226CD7CC700C06638 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6B021126CD7CC700C06638 /* RecipeModel.swift */; };
 		6C6B021426CD802F00C06638 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6B021326CD802F00C06638 /* DataService.swift */; };
 		6C6B021626CD8C3D00C06638 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6B021526CD8C3D00C06638 /* RecipeDetailView.swift */; };
+		6CB7F2DC26D01B1D00B44712 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB7F2DB26D01B1D00B44712 /* Rational.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6C6B021126CD7CC700C06638 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		6C6B021326CD802F00C06638 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		6C6B021526CD8C3D00C06638 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		6CB7F2DB26D01B1D00B44712 /* Rational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		6C6B01F326CD4BA300C06638 /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				6CB7F2DA26D01B0B00B44712 /* Utilities */,
 				6C6B01F426CD4BA300C06638 /* RecipeApp.swift */,
 				6C6B020326CD4BC100C06638 /* Views */,
 				6C6B020526CD4BDB00C06638 /* ViewModels */,
@@ -128,6 +131,14 @@
 				6C6B021326CD802F00C06638 /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		6CB7F2DA26D01B0B00B44712 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6CB7F2DB26D01B1D00B44712 /* Rational.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +213,7 @@
 			files = (
 				6C6B020C26CD509700C06638 /* Recipe.swift in Sources */,
 				6C6B021626CD8C3D00C06638 /* RecipeDetailView.swift in Sources */,
+				6CB7F2DC26D01B1D00B44712 /* Rational.swift in Sources */,
 				6C6B021226CD7CC700C06638 /* RecipeModel.swift in Sources */,
 				6C6B01F726CD4BA300C06638 /* ContentView.swift in Sources */,
 				6C2D90BC26CE0AA900E1108A /* MainTabView.swift in Sources */,
