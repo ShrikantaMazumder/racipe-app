@@ -90,9 +90,9 @@
 		6C6B020326CD4BC100C06638 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6C2D90BB26CE0AA900E1108A /* MainTabView.swift */,
 				6C6B01F626CD4BA300C06638 /* ContentView.swift */,
 				6C6B021526CD8C3D00C06638 /* RecipeDetailView.swift */,
-				6C2D90BB26CE0AA900E1108A /* MainTabView.swift */,
 				6C2D90BD26CEEE5A00E1108A /* RecipeFeaturedView.swift */,
 			);
 			path = Views;
