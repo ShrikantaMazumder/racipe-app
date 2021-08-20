@@ -15,7 +15,7 @@ struct RecipeFeaturedView: View {
         VStack(alignment: .leading, spacing: 0) {
             Text("Featured Recipe")
                 .bold()
-                .font(.largeTitle)
+                .font(.system(.largeTitle, design: .rounded))
                 .padding(.leading)
                 .padding(.top, 40)
             GeometryReader { geo in
