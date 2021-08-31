@@ -9,10 +9,17 @@ import Foundation
 
 class RecipeModel: ObservableObject {
     @Published var recipes = [Recipe]()
+    @Published var categories = Set<String>()
+    @Published var selectedCategory: String?
     
     init() {
         // load local data by data service
         self.recipes = DataService.getLocalData()
+        // loop through all product and filter unique category
+        self.categories = Set(self.recipes.map({ recipe in
+            return recipe.category
+        }))
+        self.categories.update(with: Constants.defaultFilterCategory)
         
     }
     

@@ -13,7 +13,7 @@ struct RecipeFeaturedView: View {
     @State var selectedTabIndex = 0
     
     func setFeaturedIndex() {
-        var index = model.recipes.firstIndex { (recipe) -> Bool in
+        let index = model.recipes.firstIndex { (recipe) -> Bool in
             return recipe.featured
         }
         selectedTabIndex = index ?? 0
